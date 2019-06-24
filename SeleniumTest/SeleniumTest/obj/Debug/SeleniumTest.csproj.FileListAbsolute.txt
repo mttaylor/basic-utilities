@@ -1,0 +1,1 @@
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\SeleniumTest\SeleniumTest\obj\Debug\ResolveAssemblyReference.cache
