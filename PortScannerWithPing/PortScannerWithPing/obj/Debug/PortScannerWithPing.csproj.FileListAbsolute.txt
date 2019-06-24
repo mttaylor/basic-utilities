@@ -1,0 +1,5 @@
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\PortScannerWithPing\PortScannerWithPing\bin\Debug\PortScannerWithPing.exe
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\PortScannerWithPing\PortScannerWithPing\bin\Debug\PortScannerWithPing.pdb
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\PortScannerWithPing\PortScannerWithPing\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\PortScannerWithPing\PortScannerWithPing\obj\Debug\PortScannerWithPing.exe
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\PortScannerWithPing\PortScannerWithPing\obj\Debug\PortScannerWithPing.pdb
