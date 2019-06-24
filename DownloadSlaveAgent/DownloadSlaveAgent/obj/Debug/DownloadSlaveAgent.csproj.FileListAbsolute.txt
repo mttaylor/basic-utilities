@@ -1,0 +1,5 @@
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\DownloadSlaveAgent\DownloadSlaveAgent\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\DownloadSlaveAgent\DownloadSlaveAgent\bin\Debug\DownloadSlaveAgent.exe
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\DownloadSlaveAgent\DownloadSlaveAgent\bin\Debug\DownloadSlaveAgent.pdb
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\DownloadSlaveAgent\DownloadSlaveAgent\obj\Debug\DownloadSlaveAgent.exe
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\DownloadSlaveAgent\DownloadSlaveAgent\obj\Debug\DownloadSlaveAgent.pdb
