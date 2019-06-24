@@ -1,0 +1,7 @@
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\RunRanorexTest\RunRanorexTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\RunRanorexTest\RunRanorexTest\bin\Debug\RunRanorexTest.exe
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\RunRanorexTest\RunRanorexTest\bin\Debug\RunRanorexTest.pdb
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\RunRanorexTest\RunRanorexTest\obj\Debug\RunRanorexTest.exe
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\RunRanorexTest\RunRanorexTest\obj\Debug\RunRanorexTest.pdb
+C:\Users\mtaylor.OPTO22\Documents\Visual Studio 2008\Projects\RunRanorexTest\RunRanorexTest\obj\Debug\RunRanorexTest.exe
+C:\Users\mtaylor.OPTO22\Documents\Visual Studio 2008\Projects\RunRanorexTest\RunRanorexTest\obj\Debug\RunRanorexTest.pdb
