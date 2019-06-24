@@ -69,17 +69,17 @@ function copyArt() {
 			#encode url for +'s
 			name=$(echo $name | sed 's/\+/%2B/g')
 			echo $name
-			curl -H "X-JFrog-Art-Api:AKCp5bAiutLX4zVrovGu8Hy5ZNop7F7j9HiqaTraNbVrRBQw4fKvAH3KxSBmqZZPT35a8rFhd" --insecure -X POST $art_snap_copy_url"/"$major"/"$build"/"$name"?to="$art_release_copy_url"/"$major"/"$build"/"$name
+			curl -H "X-JFrog-Art-Api:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" --insecure -X POST $art_snap_copy_url"/"$major"/"$build"/"$name"?to="$art_release_copy_url"/"$major"/"$build"/"$name
 		done < "$filename"
 
 		#copy diff to build number
-		curl -H "X-JFrog-Art-Api:AKCp5bAiutLX4zVrovGu8Hy5ZNop7F7j9HiqaTraNbVrRBQw4fKvAH3KxSBmqZZPT35a8rFhd" --insecure -X PUT "https://artifactory.opto22.com/artifactory"$art_release_copy_url"/"$major"/"$build"/"$filename
+		curl -H "X-JFrog-Art-Api:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" --insecure -X PUT "https://artifactory.opto22.com/artifactory"$art_release_copy_url"/"$major"/"$build"/"$filename
 
 		#get manifest files
 		for pkg in "${pkgs[@]}"; do
 			manifests=( "Packages" "Packages.gz" "Release" "Release.gpg" )
 			for manifest in "${manifests[@]}"; do
-				curl -H "X-JFrog-Art-Api:AKCp5bAiutLX4zVrovGu8Hy5ZNop7F7j9HiqaTraNbVrRBQw4fKvAH3KxSBmqZZPT35a8rFhd" --insecure -X POST $art_snap_copy_url"/"$major"/"$build"/"$pkg"/"$manifest"?to="$art_release_copy_url"/"$major"/"$build"/"$pkg"/"$manifest
+				curl -H "X-JFrog-Art-Api:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" --insecure -X POST $art_snap_copy_url"/"$major"/"$build"/"$pkg"/"$manifest"?to="$art_release_copy_url"/"$major"/"$build"/"$pkg"/"$manifest
 			done
 		done
 	fi
