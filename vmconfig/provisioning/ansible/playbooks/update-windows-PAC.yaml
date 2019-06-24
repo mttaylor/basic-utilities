@@ -1,0 +1,24 @@
+---
+#windows-updates-Test.yaml
+
+- hosts: Pac-Win-VMs
+  tasks:
+    - name: install (all) updates
+      win_updates:
+        category_names:
+          – Application
+          – Connectors
+          – DefinitionUpdates
+          – DeveloperKits
+          – FeaturePacks
+          – Guidance
+          – ServicePacks
+          – Tools
+          – UpdateRollups
+          - CriticalUpdates
+          – SecurityUpdates
+      register: update_result
+    - name: Reboot, if needed.
+      win_reboot:
+      when: update_result.reboot_required
+

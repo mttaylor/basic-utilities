@@ -1,0 +1,18 @@
+1. Install winrm command is "winrm quickconfig" choose yes for all options
+2. Change winrm config to allow unencrypted and basic to be true commands are:
+
+ "winrm set winrm/config/service @{AllowUnencrpted="true"}
+
+  and 
+
+ "winrm set winrm/config/service/auth @{Basic="true"}"
+
+3. Change winrm configSDDL default to allow the local user permissions the command is:
+
+ "winrm configSDDL default"
+
+this will bring up a list of users where you will need to choose the local account and give it full permissions (QAComp)
+
+Sidenot: If on Windows 7 machine
+
+Make sure that windows has a password set...but automatic login is enabled.

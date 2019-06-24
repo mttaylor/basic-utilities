@@ -1,0 +1,59 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+[QA-ESXI]
+qa-esxi-[1:3].opto22.com
+
+[Windows-VMs-All]
+GRW10-64-Box-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+GRW10-64-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+GRW10-64-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+GRW7-64-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+GRW7-64-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW10-64-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW10-64-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-64-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-64-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW10-32-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW10-32-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-32-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-32-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+
+[Groov-Win-VMs]
+GRW10-64-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+GRW10-64-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+GRW7-64-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+GRW7-64-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+
+[Pac-Win-VMs]
+PRW10-64-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW10-64-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-64-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-64-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW10-32-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW10-32-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-32-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-32-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+
+[Pac-Win-VMs-A]
+PRW10-64-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW10-32-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-64-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-32-A ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+
+[Pac-Win-VMs-B]
+PRW10-64-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW10-32-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-64-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+PRW7-32-B ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+
+[Test-VMs]
+10.192.0.248 ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
+10.192.1.4 ansible_user=QAComp ansible_password=password ansible_port=5985 ansible_connection=winrm ansible_winrm_server_cert_validation=ignore ansible_winrm_scheme=http
