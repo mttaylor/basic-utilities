@@ -1,0 +1,27 @@
+---
+
+- hosts: Groov-Win-VMs
+  tasks:
+    - name: Download latest Ranorex .exe file 
+      win_get_url:
+        skip_certificate_validation: yes
+        url: https://www.ranorex.com/download/Ranorex-7.2.1.exe
+        dest: C:\Users\QAComp\Downloads\Ranorex-7.2.1.exe
+        force: yes
+
+    - win_shell: 'C:\Users\QAComp\Downloads\Ranorex-7.2.1.exe /quiet'
+      args:
+        executable: cmd
+
+    - name: Delete Downloaded Ranorex file  
+      win_file:
+        path: C:\Users\QAComp\Downloads\Ranorex-7.2.1.exe
+        state: absent
+  
+# more complicated way of installing exe...for now just using powershell
+#    - name: Install Ranorex
+#      win_package:
+#        name: Ranorex-7.1.1.exe
+#        path: C:\Users\QAComp\Downloads\Ranorex-7.1.1.exe
+#        product_id: '{A2C7A1FE-9B9E-4055-9C37-7027272200FA}'
+#        arguments: /install /norestart
