@@ -1,0 +1,5 @@
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\PortScanner\PortScanner\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\PortScanner\PortScanner\bin\Debug\PortScanner.exe
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\PortScanner\PortScanner\bin\Debug\PortScanner.pdb
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\PortScanner\PortScanner\obj\Debug\PortScanner.exe
+C:\Users\mtaylor\Documents\Visual Studio 2008\Projects\PortScanner\PortScanner\obj\Debug\PortScanner.pdb
